@@ -1,0 +1,108 @@
+#################################   
+#        COUNTING PAIRS         #   #########################################
+#################################   #           COUNTING TRIPLES            #
+# ----------------------------- #   #########################################
+#     Andy - Carl      :    5   #   # ------------------------------------- #
+#    Andy - Erlend     :    5   #   #     Andy - Carl - Erlend      :   1   #
+#      Andy - F9       :    5   #   #       Andy - Carl - F9        :   0   #
+#     Andy - Jacob     :    6   #   #      Andy - Carl - Jacob      :   1   #
+#   Andy - Kristian    :    5   #   #    Andy - Carl - Kristian     :   0   #
+#     Andy - Maso      :    6   #   #      Andy - Carl - Maso       :   1   #
+#    Andy - Petter     :    6   #   #     Andy - Carl - Petter      :   1   #
+#    Andy - Øystein    :    6   #   #     Andy - Carl - Øystein     :   1   #
+# ----------------------------- #   #      Andy - Erlend - F9       :   1   #
+#    Carl - Erlend     :    6   #   #     Andy - Erlend - Jacob     :   0   #
+#      Carl - F9       :    5   #   #   Andy - Erlend - Kristian    :   1   #
+#     Carl - Jacob     :    6   #   #     Andy - Erlend - Maso      :   1   #
+#   Carl - Kristian    :    6   #   #    Andy - Erlend - Petter     :   0   #
+#     Carl - Maso      :    5   #   #    Andy - Erlend - Øystein    :   1   #
+#    Carl - Petter     :    6   #   #       Andy - F9 - Jacob       :   1   #
+#    Carl - Øystein    :    5   #   #     Andy - F9 - Kristian      :   1   #
+# ----------------------------- #   #       Andy - F9 - Maso        :   0   #
+#     Erlend - F9      :    6   #   #      Andy - F9 - Petter       :   1   #
+#    Erlend - Jacob    :    6   #   #      Andy - F9 - Øystein      :   1   #
+#  Erlend - Kristian   :    5   #   #    Andy - Jacob - Kristian    :   1   #
+#    Erlend - Maso     :    5   #   #      Andy - Jacob - Maso      :   1   #
+#   Erlend - Petter    :    5   #   #     Andy - Jacob - Petter     :   1   #
+#   Erlend - Øystein   :    6   #   #    Andy - Jacob - Øystein     :   1   #
+# ----------------------------- #   #    Andy - Kristian - Maso     :   1   #
+#      F9 - Jacob      :    5   #   #   Andy - Kristian - Petter    :   1   #
+#    F9 - Kristian     :    6   #   #   Andy - Kristian - Øystein   :   0   #
+#      F9 - Maso       :    6   #   #     Andy - Maso - Petter      :   1   #
+#     F9 - Petter      :    5   #   #     Andy - Maso - Øystein     :   1   #
+#     F9 - Øystein     :    6   #   #    Andy - Petter - Øystein    :   1   #
+# ----------------------------- #   # ------------------------------------- #
+#   Jacob - Kristian   :    5   #   #      Carl - Erlend - F9       :   1   #
+#     Jacob - Maso     :    6   #   #     Carl - Erlend - Jacob     :   1   #
+#    Jacob - Petter    :    5   #   #   Carl - Erlend - Kristian    :   1   #
+#   Jacob - Øystein    :    5   #   #     Carl - Erlend - Maso      :   0   #
+# ----------------------------- #   #    Carl - Erlend - Petter     :   1   #
+#   Kristian - Maso    :    6   #   #    Carl - Erlend - Øystein    :   1   #
+#  Kristian - Petter   :    6   #   #       Carl - F9 - Jacob       :   1   #
+#  Kristian - Øystein  :    5   #   #     Carl - F9 - Kristian      :   1   #
+# ----------------------------- #   #       Carl - F9 - Maso        :   1   #
+#    Maso - Petter     :    5   #   #      Carl - F9 - Petter       :   0   #
+#    Maso - Øystein    :    5   #   #      Carl - F9 - Øystein      :   1   #
+# ----------------------------- #   #    Carl - Jacob - Kristian    :   1   #
+#   Petter - Øystein   :    6   #   #      Carl - Jacob - Maso      :   1   #
+# ----------------------------- #   #     Carl - Jacob - Petter     :   1   #
+#################################   #    Carl - Jacob - Øystein     :   0   #
+#################################   #    Carl - Kristian - Maso     :   1   #
+#        COUNTING PAIRS         #   #   Carl - Kristian - Petter    :   1   #
+#################################   #   Carl - Kristian - Øystein   :   1   #
+# ----------------------------- #   #     Carl - Maso - Petter      :   1   #
+#     Andy - Carl      :    5   #   #     Carl - Maso - Øystein     :   0   #
+#    Andy - Erlend     :    5   #   #    Carl - Petter - Øystein    :   1   #
+#      Andy - F9       :    5   #   # ------------------------------------- #
+#     Andy - Jacob     :    6   #   #      Erlend - F9 - Jacob      :   1   #
+#   Andy - Kristian    :    5   #   #    Erlend - F9 - Kristian     :   1   #
+#     Andy - Maso      :    6   #   #      Erlend - F9 - Maso       :   1   #
+#    Andy - Petter     :    6   #   #     Erlend - F9 - Petter      :   0   #
+#    Andy - Øystein    :    6   #   #     Erlend - F9 - Øystein     :   1   #
+# ----------------------------- #   #   Erlend - Jacob - Kristian   :   1   #
+#    Carl - Erlend     :    6   #   #     Erlend - Jacob - Maso     :   1   #
+#      Carl - F9       :    5   #   #    Erlend - Jacob - Petter    :   1   #
+#     Carl - Jacob     :    6   #   #   Erlend - Jacob - Øystein    :   1   #
+#   Carl - Kristian    :    6   #   #   Erlend - Kristian - Maso    :   0   #
+#     Carl - Maso      :    5   #   #  Erlend - Kristian - Petter   :   1   #
+#    Carl - Petter     :    6   #   #  Erlend - Kristian - Øystein  :   0   #
+#    Carl - Øystein    :    5   #   #    Erlend - Maso - Petter     :   1   #
+# ----------------------------- #   #    Erlend - Maso - Øystein    :   1   #
+#     Erlend - F9      :    6   #   #   Erlend - Petter - Øystein   :   1   #
+#    Erlend - Jacob    :    6   #   # ------------------------------------- #
+#  Erlend - Kristian   :    5   #   #     F9 - Jacob - Kristian     :   0   #
+#    Erlend - Maso     :    5   #   #       F9 - Jacob - Maso       :   1   #
+#   Erlend - Petter    :    5   #   #      F9 - Jacob - Petter      :   1   #
+#   Erlend - Øystein   :    6   #   #     F9 - Jacob - Øystein      :   0   #
+# ----------------------------- #   #     F9 - Kristian - Maso      :   1   #
+#      F9 - Jacob      :    5   #   #    F9 - Kristian - Petter     :   1   #
+#    F9 - Kristian     :    6   #   #    F9 - Kristian - Øystein    :   1   #
+#      F9 - Maso       :    6   #   #      F9 - Maso - Petter       :   1   #
+#     F9 - Petter      :    5   #   #      F9 - Maso - Øystein      :   1   #
+#     F9 - Øystein     :    6   #   #     F9 - Petter - Øystein     :   1   #
+# ----------------------------- #   # ------------------------------------- #
+#   Jacob - Kristian   :    5   #   #    Jacob - Kristian - Maso    :   1   #
+#     Jacob - Maso     :    6   #   #   Jacob - Kristian - Petter   :   0   #
+#    Jacob - Petter    :    5   #   #  Jacob - Kristian - Øystein   :   1   #
+#   Jacob - Øystein    :    5   #   #     Jacob - Maso - Petter     :   0   #
+# ----------------------------- #   #    Jacob - Maso - Øystein     :   1   #
+#   Kristian - Maso    :    6   #   #   Jacob - Petter - Øystein    :   1   #
+#  Kristian - Petter   :    6   #   # ------------------------------------- #
+#  Kristian - Øystein  :    5   #   #   Kristian - Maso - Petter    :   1   #
+# ----------------------------- #   #   Kristian - Maso - Øystein   :   1   #
+#    Maso - Petter     :    5   #   #  Kristian - Petter - Øystein  :   1   #
+#    Maso - Øystein    :    5   #   # ------------------------------------- #
+# ----------------------------- #   #    Maso - Petter - Øystein    :   0   #
+#   Petter - Øystein   :    6   #   # ------------------------------------- #
+# ----------------------------- #   #########################################
+#################################
+
+                    #############################
+                    #    NUMBER OF POSSIBLE     #
+                    #         FACE-OFFS         #
+                    #############################
+                    # ------------------------- #
+                    #        n_pair = 36        #
+                    #       n_triple = 84       #
+                    # ------------------------- #
+                    #############################

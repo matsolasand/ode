@@ -1,0 +1,103 @@
+#############################################################################
+#                                                                           #
+#                  TOTAL NUMBER OF FACEOFFS (SEASON 23/24)                  #
+#                                                                           #
+#############################################################################
+
+                                    #########################################
+                                    #          NUMBER OF MEETINGS           #
+                                    #               (TRIPLES)               #
+                                    #########################################
+                                    # ------------------------------------- #
+                                    #     Andy - Carl - Erlend      :   1   #
+                                    #       Andy - Carl - F9        :   0   #
+                                    #      Andy - Carl - Jacob      :   1   #
+                                    #    Andy - Carl - Kristian     :   1   #
+                                    #      Andy - Carl - Maso       :   1   #
+                                    #     Andy - Carl - Petter      :   1   #
+                                    #     Andy - Carl - Øystein     :   1   #
+                                    #      Andy - Erlend - F9       :   1   #
+                                    #     Andy - Erlend - Jacob     :   0   #
+                                    #   Andy - Erlend - Kristian    :   1   #
+                                    #     Andy - Erlend - Maso      :   1   #
+                                    #    Andy - Erlend - Petter     :   1   #
+                                    #    Andy - Erlend - Øystein    :   1   #
+#################################   #       Andy - F9 - Jacob       :   1   #
+#      NUMBER OF MEETINGS       #   #     Andy - F9 - Kristian      :   1   #
+#            (PAIRS)            #   #       Andy - F9 - Maso        :   0   #
+#################################   #      Andy - F9 - Petter       :   1   #
+# ----------------------------- #   #      Andy - F9 - Øystein      :   1   #
+#     Andy - Carl      :    6   #   #    Andy - Jacob - Kristian    :   1   #
+#    Andy - Erlend     :    6   #   #      Andy - Jacob - Maso      :   1   #
+#      Andy - F9       :    5   #   #     Andy - Jacob - Petter     :   1   #
+#     Andy - Jacob     :    6   #   #    Andy - Jacob - Øystein     :   1   #
+#   Andy - Kristian    :    6   #   #    Andy - Kristian - Maso     :   1   #
+#     Andy - Maso      :    6   #   #   Andy - Kristian - Petter    :   1   #
+#    Andy - Petter     :    7   #   #   Andy - Kristian - Øystein   :   0   #
+#    Andy - Øystein    :    6   #   #     Andy - Maso - Petter      :   1   #
+# ----------------------------- #   #     Andy - Maso - Øystein     :   1   #
+#    Carl - Erlend     :    6   #   #    Andy - Petter - Øystein    :   1   #
+#      Carl - F9       :    6   #   # ------------------------------------- #
+#     Carl - Jacob     :    6   #   #      Carl - Erlend - F9       :   1   #
+#   Carl - Kristian    :    6   #   #     Carl - Erlend - Jacob     :   1   #
+#     Carl - Maso      :    6   #   #   Carl - Erlend - Kristian    :   1   #
+#    Carl - Petter     :    6   #   #     Carl - Erlend - Maso      :   0   #
+#    Carl - Øystein    :    6   #   #    Carl - Erlend - Petter     :   1   #
+# ----------------------------- #   #    Carl - Erlend - Øystein    :   1   #
+#     Erlend - F9      :    6   #   #       Carl - F9 - Jacob       :   1   #
+#    Erlend - Jacob    :    6   #   #     Carl - F9 - Kristian      :   1   #
+#  Erlend - Kristian   :    6   #   #       Carl - F9 - Maso        :   1   #
+#    Erlend - Maso     :    5   #   #      Carl - F9 - Petter       :   1   #
+#   Erlend - Petter    :    6   #   #      Carl - F9 - Øystein      :   1   #
+#   Erlend - Øystein   :    7   #   #    Carl - Jacob - Kristian    :   1   #
+# ----------------------------- #   #      Carl - Jacob - Maso      :   1   #
+#      F9 - Jacob      :    6   #   #     Carl - Jacob - Petter     :   1   #
+#    F9 - Kristian     :    7   #   #    Carl - Jacob - Øystein     :   0   #
+#      F9 - Maso       :    6   #   #    Carl - Kristian - Maso     :   1   #
+#     F9 - Petter      :    6   #   #   Carl - Kristian - Petter    :   0   #
+#     F9 - Øystein     :    6   #   #   Carl - Kristian - Øystein   :   1   #
+# ----------------------------- #   #     Carl - Maso - Petter      :   1   #
+#   Jacob - Kristian   :    6   #   #     Carl - Maso - Øystein     :   1   #
+#     Jacob - Maso     :    7   #   #    Carl - Petter - Øystein    :   1   #
+#    Jacob - Petter    :    6   #   # ------------------------------------- #
+#   Jacob - Øystein    :    5   #   #      Erlend - F9 - Jacob      :   1   #
+# ----------------------------- #   #    Erlend - F9 - Kristian     :   1   #
+#   Kristian - Maso    :    6   #   #      Erlend - F9 - Maso       :   1   #
+#  Kristian - Petter   :    5   #   #     Erlend - F9 - Petter      :   0   #
+#  Kristian - Øystein  :    6   #   #     Erlend - F9 - Øystein     :   1   #
+# ----------------------------- #   #   Erlend - Jacob - Kristian   :   1   #
+#    Maso - Petter     :    6   #   #     Erlend - Jacob - Maso     :   1   #
+#    Maso - Øystein    :    6   #   #    Erlend - Jacob - Petter    :   1   #
+# ----------------------------- #   #   Erlend - Jacob - Øystein    :   1   #
+#   Petter - Øystein   :    6   #   #   Erlend - Kristian - Maso    :   0   #
+# ----------------------------- #   #  Erlend - Kristian - Petter   :   1   #
+#################################   #  Erlend - Kristian - Øystein  :   1   #
+                                    #    Erlend - Maso - Petter     :   1   #
+                                    #    Erlend - Maso - Øystein    :   1   #
+                                    #   Erlend - Petter - Øystein   :   1   #
+                                    # ------------------------------------- #
+                                    #     F9 - Jacob - Kristian     :   1   #
+                                    #       F9 - Jacob - Maso       :   1   #
+  #############################     #      F9 - Jacob - Petter      :   1   #
+  #    NUMBER OF POSSIBLE     #     #     F9 - Jacob - Øystein      :   0   #
+  #     PAIRS VS TRIPLES      #     #     F9 - Kristian - Maso      :   1   #
+  #############################     #    F9 - Kristian - Petter     :   1   #
+  # ------------------------- #     #    F9 - Kristian - Øystein    :   1   #
+  #        n_pair = 36        #     #      F9 - Maso - Petter       :   1   #
+  #       n_triple = 84       #     #      F9 - Maso - Øystein      :   1   #
+  # ------------------------- #     #     F9 - Petter - Øystein     :   1   #
+  #############################     # ------------------------------------- #
+                                    #    Jacob - Kristian - Maso    :   1   #
+                                    #   Jacob - Kristian - Petter   :   0   #
+                                    #  Jacob - Kristian - Øystein   :   1   #
+                                    #     Jacob - Maso - Petter     :   1   #
+                                    #    Jacob - Maso - Øystein     :   1   #
+                                    #   Jacob - Petter - Øystein    :   1   #
+                                    # ------------------------------------- #
+                                    #   Kristian - Maso - Petter    :   1   #
+                                    #   Kristian - Maso - Øystein   :   1   #
+                                    #  Kristian - Petter - Øystein  :   1   #
+                                    # ------------------------------------- #
+                                    #    Maso - Petter - Øystein    :   0   #
+                                    # ------------------------------------- #
+                                    #########################################
