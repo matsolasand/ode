@@ -269,37 +269,40 @@ class Dart:
                    [2, 1, 2, 5, 4, 3, 2, 1, 1],
                    [2, 2, 4, 5, 1, 1, 2, 3, 1],
                    [2, 2, 1, 5, 1, 1, 2, 4, 3],
-                   [2, 1, 2, 5, 4, 1, 3, 2, 1]]
+                   [2, 1, 2, 5, 4, 1, 3, 2, 1],
+                   [1, 4, 2, 5, 2, 2, 1, 1, 3]]
         # may be wrong!
         doubles = [[3, 2, 1],
                    [2, 1, 3],
                    [2, 3, 1],
                    [2, 1, 3],
                    [1, 3, 2],
-                   [2, 1, 3]]
+                   [2, 1, 3],
+                   [1, 3, 2]]
         for pts in singles:
             for i, name in enumerate(self.names):
                 self.pts_single[name] += pts[i]
         title = "SINGLES LEADERBOARD"
-        print("\n\n\n\n" + "#" * 31)
-        print(f"#{title:^29}#")
-        print("#" * 31)
-        print("#" + " " * 29 + "#")
+        ws = 5 * " "
+        print("\n\n\n\n" + ws + "#" * 31)
+        print(ws + f"#{title:^29}#")
+        print(ws + "#" * 31)
+        print(ws + "#" + " " * 29 + "#")
         counter = 0
         for name, pts in sorted(
             self.pts_single.items(), key=lambda item: item[1], reverse=True):
             if counter == 3 or counter == 6:
-                print("# " + "-" * 27 + " #")
-            print(f"#{name:^14}:{pts:>9}" + " " * 5 + "#")
+                print(ws + "# " + "-" * 27 + " #")
+            print(ws + f"#{name:^14}:{pts:>9}" + " " * 5 + "#")
             counter += 1
-        print("#" + " " * 29 + "#")
-        print("#" * 31, "\n\n")
+        print(ws + "#" + " " * 29 + "#")
+        print(ws + "#" * 31, "\n")
 
         for pts in doubles:
             for i, team in enumerate(self.teams):
                 self.pts_double[team] += pts[i]
         title = "TEAMS LEADERBOARD"
-        print("\n\n" + "#" * 41)
+        print("\n" + "#" * 41)
         print(f"#{title:^39}#")
         print("#" * 41)
         print("#" + " " * 39 + "#")
@@ -732,7 +735,7 @@ def main():
                  5: "ode.save_counts()",
                  6: "ode.write_counts_for_ode()",
                  7: "ode.write_counts_for_me()"}
-    func = functions[6]
+    func = functions[2]
     exec(func)
 
 if __name__ == "__main__":
