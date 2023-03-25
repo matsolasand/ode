@@ -17,11 +17,17 @@ class Dart:
                       " Petter | Henrik | Andreas",
                       " Jacob | Maso | Carl "]
         self.pts_single = {}
+        self.vic_single = {}
+        self.finals = {}
         for name in self.names:
             self.pts_single[name] = 0
+            self.vic_single[name] = 0
+            self.finals[name] = 0
         self.pts_double = {}
+        self.vic_double = {}
         for team in self.teams:
             self.pts_double[team] = 0
+            self.vic_double[team] = 0
         self.init_pair_count()
         # other
         self.verbose = verbose
@@ -263,6 +269,10 @@ class Dart:
         (Erlend, Øystein, Kristian)
         (Petter, Henrik, Andreas)
         (Jacob, Maso, Carl)
+
+        TODO
+        ----
+        include number of finals
         """
         singles = [[5, 1, 2, 2, 4, 1, 2, 3, 1],
                    [5, 2, 4, 1, 3, 1, 2, 1, 2],
@@ -270,7 +280,9 @@ class Dart:
                    [2, 2, 4, 5, 1, 1, 2, 3, 1],
                    [2, 2, 1, 5, 1, 1, 2, 4, 3],
                    [2, 1, 2, 5, 4, 1, 3, 2, 1],
-                   [1, 4, 2, 5, 2, 2, 1, 1, 3]]
+                   [1, 4, 2, 5, 2, 2, 1, 1, 3],
+                   [2, 5, 1, 4, 3, 2, 2, 1, 1],
+                   [2, 2, 1, 3, 1, 2, 5, 1, 4]]
         # may be wrong!
         doubles = [[3, 2, 1],
                    [2, 1, 3],
@@ -278,41 +290,57 @@ class Dart:
                    [2, 1, 3],
                    [1, 3, 2],
                    [2, 1, 3],
-                   [1, 3, 2]]
+                   [1, 3, 2],
+                   [3, 2, 1],
+                   [2, 3, 1]]
         for pts in singles:
             for i, name in enumerate(self.names):
                 self.pts_single[name] += pts[i]
-        title = "SINGLES LEADERBOARD"
-        ws = 5 * " "
-        print("\n\n\n\n" + ws + "#" * 31)
-        print(ws + f"#{title:^29}#")
-        print(ws + "#" * 31)
-        print(ws + "#" + " " * 29 + "#")
+                if pts[i] >= 3:
+                    self.finals[name] += 1
+                    if pts[i] == 5:
+                        self.vic_single[name] += 1
+        title1 = "SINGLES LEADERBOARD"
+        title2 = "VICTORIES"
+        title3 = "FINALS"
+        print("\n\n\n\n" + "#" * 63)
+        print(f"#{title1:^29}#{title2:^15}#{title3:^15}#")
+        print("#" * 63)
+        print("#" + " " * 29 + "#" + " " * 15 + "#" + " " * 15 + "#")
         counter = 0
         for name, pts in sorted(
             self.pts_single.items(), key=lambda item: item[1], reverse=True):
             if counter == 3 or counter == 6:
-                print(ws + "# " + "-" * 27 + " #")
-            print(ws + f"#{name:^14}:{pts:>9}" + " " * 5 + "#")
+                print("# " + "-" * 27 + " # " + "-" * 13 + " # " + "-" * 13\
+                      + " #")
+            vic = self.vic_single[name]
+            ff = self.finals[name]
+            print(f"#{name:^14}:{pts:>9}" + " " * 5 + "#" + f"{vic:^15}#"\
+                  + f"{ff:^15}#")
             counter += 1
-        print(ws + "#" + " " * 29 + "#")
-        print(ws + "#" * 31, "\n")
+        print("#" + " " * 29 + "#" + " " * 15 + "#" + " " * 15 + "#")
+        print("#" * 63, "\n")
 
         for pts in doubles:
             for i, team in enumerate(self.teams):
                 self.pts_double[team] += pts[i]
-        title = "TEAMS LEADERBOARD"
-        print("\n" + "#" * 41)
-        print(f"#{title:^39}#")
-        print("#" * 41)
-        print("#" + " " * 39 + "#")
+                if pts[i] == 3:
+                    self.vic_double[team] += 1
+        title1 = "TEAMS LEADERBOARD"
+        title2 = "VICTORIES"
+        ws = 3 * " "
+        print("\n" + ws + "#" * 57)
+        print(ws + f"#{title1:^39}#{title2:^15}#")
+        print(ws + "#" * 57)
+        print(ws + "#" + " " * 39 + "#" + " " * 15 + "#")
         for team, pts in sorted(
             self.pts_double.items(), key=lambda item: item[1], reverse=True):
-            print(f"#{team:^31}:{pts:^7}#")
+            vic = self.vic_double[team]
+            print(ws + f"#{team:^31}:{pts:^7}#" + f"{vic:^15}#")
         # for team in self.teams:
         #     print(f"#{team:^31}:{self.pts_double[team]:^7}#")
-        print("#" + " " * 39 + "#")
-        print("#" * 41, "\n\n\n\n")
+        print(ws + "#" + " " * 39 + "#" + " " * 15 + "#")
+        print(ws + "#" * 57, "\n\n\n\n")
     
     # ------------------------------------------------------------------
 
